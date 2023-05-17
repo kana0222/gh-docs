@@ -31,25 +31,24 @@
 1. "SFTP: config"を選択（コマンドパレットを開いた際に SFTP と叩けば予想変換で出てくる）
 1. コマンド入力後に開く SFTP.json に、接続したいサーバの情報を入力・設定する。  
 	**ex.:**
-
-```
-{
-  "name": "任意の名前（PRJ名が一番わかりやすいかと）",
-  "host": "サーバのホスト",
-  "protocol": "ftp",
-  "port": 21,
-  "username": "いつもの",
-  "password": "いつもの",
-  "remotePath": "接続した際に自動で繋ぎたいパス。**ex.:** /P00**_***_Test",
-  "uploadOnSave": false, // ファイル保存時に自動でuploadするか。false推奨。
-  "ignore": [ // ignore設定したいファイル拡張子を設定
-    "**/.vscode/**",
-    "**/.git/**",
-    "**/.DS_Store",
-    ".gitignore"
-  ]
-}
-```
+	```
+	{
+		"name": "任意の名前（PRJ名が一番わかりやすいかと）",
+		"host": "サーバのホスト",
+		"protocol": "ftp",
+		"port": 21,
+		"username": "いつもの",
+		"password": "いつもの",
+		"remotePath": "接続した際に自動で繋ぎたいパス。**ex.:** /P00**_***_Test",
+		"uploadOnSave": false, // ファイル保存時に自動でuploadするか。false推奨。
+		"ignore": [ // ignore設定したいファイル拡張子を設定
+			"**/.vscode/**",
+			"**/.git/**",
+			"**/.DS_Store",
+			".gitignore"
+		]
+	}
+	```
 
 1. 再度コマンドパレットを開く（Shortcut: cmd + shift + p）
 1. "SFTP: List"を選択
@@ -81,9 +80,9 @@
 ## 応用/余談
 
 1. 使用方法 3 のアップロード、毎回コマンドパレットを開くのが面倒な場合、VSCode の標準機能のショートカットキー登録を活用すると楽です。
-   1. コマンドパレット "Preferences: Open Keyboard Shortcuts" or cmd + K, cmd + S
-   1. Search Field で "SFTP"で検索
-   1. "SFTP: Upload Active File"の項目で、任意のショートカットを登録（そこそこ大事なコマンドなので、誤操作のないよう普通入力しないような組み合わせがオススメです）
-   1. 動作確認
-	 完了
+	1. コマンドパレット "Preferences: Open Keyboard Shortcuts" or cmd + K, cmd + S
+	1. Search Field で "SFTP"で検索
+	1. "SFTP: Upload Active File"の項目で、任意のショートカットを登録（そこそこ大事なコマンドなので、誤操作のないよう普通入力しないような組み合わせがオススメです）
+	1. 動作確認
+	完了
 1. SFTP を使って接続できるかどうかは、IP アドレスに委ねられてます。IP 制限のかかっている環境ではどうあがいても接続はできないので、管理者に解除してもらうかその他の方法をご検討ください・・・。
